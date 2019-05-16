@@ -13,7 +13,7 @@ for sentence in csvFile:
     if len(sentence) < 3:
         print(sentence)
     elif (sentence[2] == 'Positive') or (sentence[2] == 'Negative'):
-        content = sentence[2] + "    " + sentence[1];
+        content = sentence[2] + "\t" + sentence[1];
         content = content.replace('\u3000', '').replace('\n', '') + '\n'
         content = content
         if line <= 5000:

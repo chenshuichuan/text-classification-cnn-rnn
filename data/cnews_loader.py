@@ -90,7 +90,15 @@ def read_category():
     cat_to_id = dict(zip(categories, range(len(categories))))
 
     return categories, cat_to_id
+def read_category2():
+    """读取分类目录，固定"""
+    categories = ['Positive', 'Negative']
 
+    categories = [native_content(x) for x in categories]
+
+    cat_to_id = dict(zip(categories, range(len(categories))))
+
+    return categories, cat_to_id
 
 def to_words(content, words):
     """将id表示的内容转换为文字"""
